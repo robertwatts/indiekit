@@ -1,36 +1,22 @@
 {
-  "name": "example-config",
+  "name": "indiekit.robwatts.org",
   "version": "1.0.0",
-  "description": "Example configuration for Indiekit",
+  "description": "Indiekit server for https://robwatts.org",
   "keywords": [
     "indiekit",
     "indieweb"
   ],
-  "homepage": "https://github.com/getindiekit/example-config#readme",
-  "bugs": {
-    "url": "https://github.com/getindiekit/example-config/issues"
-  },
   "license": "MIT",
-  "author": {
-    "name": "Paul Robert Lloyd",
-    "url": "https://paulrobertlloyd.com"
-  },
-  "main": "index.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/getindiekit/example-config.git"
-  },
+  "main": "index.js",
   "scripts": {
     "start": "indiekit serve"
   },
   "dependencies": {
-    "@indiekit/indiekit": "^1.0.0-alpha",
-    "@indiekit/preset-jekyll": "^1.0.0-alpha",
-    "@indiekit/store-github": "^1.0.0-alpha",
-    "@indiekit/syndicator-mastodon": "^1.0.0-alpha"
+    "@indiekit/indiekit": "^1.0.0-beta.2",
+    "@indiekit/store-github": "^1.0.0-beta.1",
+    "@indiekit/syndicator-mastodon": "^1.0.0-beta.2"
   },
   "engines": {
     "node": ">=18"
-  },
-  "private": true
+  }
 }
