@@ -1,3 +1,4 @@
+require('dotenv').config();
 const process = require("node:process");
 
 /**
@@ -30,10 +31,6 @@ module.exports = {
   },
   /**
    * Add plug-ins.
-   * 
-   * In this example we have chosen to use a publication preset for Jekyll,
-   * save posts and media files to GitHub repository, and added a syndicator
-   * to share posts on a Mastodon server.
    * 
    * See: https://getindiekit.com/configuration/#plugins
    */
