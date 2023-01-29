@@ -14,8 +14,8 @@ const postTypes = [{
   type: "note",
   name: "Note",
   post: {
-    path: "_notes/{yyyy}-{MM}-{dd}-{slug}.md",
-    url: "notes/{yyyy}/{MM}/{dd}/{slug}",
+    path: "posts/{yyyy}-{MM}-{dd}-{slug}.md",
+    url: "{slug}",
   },
 }];
 
