@@ -1,24 +1,6 @@
 require('dotenv').config();
 const process = require("node:process");
 
-/**
- * Customise post types.
- * 
- * Publication presets provide default values, but these can be overridden. 
- * See: https://getindiekit.com/configuration/post-types
- * 
- * Use placeholder tokens to customise file paths and URLS.
- * See: https://getindiekit.com/configuration/post-types#path-and-url-tokens
- */ 
-const postTypes = [{
-  type: "note",
-  name: "Note",
-  post: {
-    path: "posts/{yyyy}-{MM}-{dd}-{slug}.md",
-    url: "{slug}",
-  },
-}];
-
 module.exports = {
   /**
    * Set application options
@@ -37,6 +19,7 @@ module.exports = {
   plugins: [
     "@indiekit/store-github",
     "@indiekit/syndicator-mastodon",
+    "indiekit-preset-blot",
   ],
   /**
    * Set publication options
@@ -45,8 +28,7 @@ module.exports = {
    * See: https://getindiekit.com/configuration/#publication
    */ 
   publication: {
-    me: "https://robwatts.org",
-    postTypes: postTypes,
+    me: "https://robwatts.org"
   },
   /**
    * GitHub content store options.
