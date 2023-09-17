@@ -87,7 +87,7 @@ module.exports = {
   "@indiekit/store-github": {
     user: "robertwatts",
     repo: "robwatts-content",
-    branch: "master",
+    branch: "main",
     token: process.env.GITHUB_TOKEN
   },
   /**
